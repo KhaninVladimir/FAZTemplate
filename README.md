@@ -8,4 +8,4 @@ Project from zero in 4 days:
 5) Full process Spawn, resurection
 6) Connect by subsystem null
 7) GAS implementation
-8) 90+ % on C++ code
+8) 98% on C++ code
