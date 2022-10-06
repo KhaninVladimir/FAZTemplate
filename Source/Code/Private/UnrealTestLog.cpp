@@ -1,0 +1,7 @@
+
+#include "UnrealTestLog.h"
+
+DEFINE_LOG_CATEGORY(UTLog);
+DEFINE_LOG_CATEGORY(UTComponentLog);
+DEFINE_LOG_CATEGORY(UTGameModeLog);
+DEFINE_LOG_CATEGORY(UTAbilitySystemLog);
