@@ -9,3 +9,8 @@ Project from zero in 4 days:
 6) Connect by subsystem null
 7) GAS implementation
 8) 98% on C++ code
+
+
+Youtube:
+https://youtu.be/4jmF7-QzJgk
+https://youtu.be/aEf2rSJNLXs
