@@ -1,7 +1,7 @@
 
 #include "UTOnlineGameSetting.h"
 #include "UnrealTest.h"
-
+#include "Online\OnlineSessionNames.h"
 
 
 FUTOnlineSessionSettings::FUTOnlineSessionSettings(bool bIsLAN, bool bIsPresence, int32 MaxNumPlayers)

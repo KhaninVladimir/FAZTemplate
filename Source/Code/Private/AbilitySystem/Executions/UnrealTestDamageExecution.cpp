@@ -28,8 +28,8 @@ void UUnrealTestDamageExecution::Execute_Implementation(const FGameplayEffectCus
 		AUnrealTestPlayerState* PS_A = Pawn_A ? Cast<AUnrealTestPlayerState>(Pawn_A->GetPlayerState()) : nullptr;
 		AUnrealTestPlayerState* PS_B = Pawn_B ? Cast<AUnrealTestPlayerState>(Pawn_B->GetPlayerState()) : nullptr;
 		
-		FGenericTeamId Team_A = PS_A ? PS_A->GetTeamID() : 255;
-		FGenericTeamId Team_B = PS_B ? PS_B->GetTeamID() : 255;
+		FGenericTeamId Team_A = PS_A ? PS_A->GetTeamID() : FGenericTeamId(255);
+		FGenericTeamId Team_B = PS_B ? PS_B->GetTeamID() : FGenericTeamId(255);
 
 		if (Team_A == Team_B)
 			return;

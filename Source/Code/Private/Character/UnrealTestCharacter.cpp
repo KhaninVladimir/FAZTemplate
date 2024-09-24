@@ -9,7 +9,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
-
+#include "AIController.h"
 #include "Common/UnrealTestType.h"
 
 #include "Game/UnrealTestGameMode.h"
@@ -375,8 +375,8 @@ void AUnrealTestCharacter::Die(AController* Killer, AActor* DamageCauser, bool b
 
 	if (AUnrealTestGameMode* GM = GetUTGameMode())
 	{
-		AController* VictimPlayer = Controller ? Controller : Cast<AController>(GetOwner());
-		GM->Killed(LastHitBy ? LastHitBy : Killer, VictimPlayer, this, DamageCauser);
+		AController* VictimPlayer = Controller ? Cast<AController>(Controller) : Cast<AController>(GetOwner());
+		GM->Killed(LastHitBy ? LastHitBy.Get() : Killer, VictimPlayer, this, DamageCauser);
 	}
 
 	RemoveCharacterAbilities();

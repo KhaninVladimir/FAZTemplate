@@ -8,7 +8,7 @@
 #include <AIController.h>
 #include <BehaviorTree/BlackboardComponent.h>
 
-#include "AIModule/Classes/Perception/AISense_Sight.h"
+#include "Perception/AISense_Sight.h"
 
 #include "AbilitySystem/UnrealTestAbilitySystemComponent.h"
 #include "AbilitySystem/Ability/UTFireGameplayAbility.h"

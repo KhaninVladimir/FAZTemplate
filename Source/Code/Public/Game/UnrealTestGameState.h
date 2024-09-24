@@ -28,7 +28,7 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "Delegates")
 	FOnMatchStateChanged OnMatchStateChanged;
 
-	float GetReplicatedWorldTimeSeconds() const { return ReplicatedWorldTimeSeconds; }
+	float GetReplicatedWorldTimeSeconds() const { return ReplicatedWorldTimeSecondsDouble; }
 
 	void AddPlayerToTeam(AUnrealTestPlayerState* Player, AUnrealTestPlayerTeam* Team);
 	void AddPlayerToTeam(AUnrealTestPlayerState* Player, FGenericTeamId TeamId);

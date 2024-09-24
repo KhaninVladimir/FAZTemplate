@@ -5,6 +5,7 @@
 #include "Game/UTOnlineGameSetting.h"
 #include "OnlineSubsystem.h"
 #include "OnlineSessionSettings.h"
+#include "Online\OnlineSessionNames.h"
 
 namespace
 {
